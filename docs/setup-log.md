@@ -6,6 +6,13 @@
 - Document everything for portfolio showcase
 - Create practical home services (NAS, automation, monitoring)
 
+## System Architecture
+- **Cluster**: Single-node K3s (Kubernetes 1.32.6)
+- **Hardware**: Raspberry Pi 5 (8GB RAM, 256GB storage, 1TB USB SSD)
+- **Network**: Static IP (192.168.1.100), UFW firewall, ingress routing
+- **Storage**: HostPath volumes, persistent USB mount (/mnt/nextcloud-data)
+- **Services**: 4 applications (Samba, FileBrowser, Nginx Ingress, Nextcloud)
+
 ## Phase 1: Foundation Setup
 
 ### Date: [7/24]
@@ -116,3 +123,72 @@ ssh-keygen -t ed25519 -C "joseph-homelab-v2" -f ~/.ssh/homelab_ed25519
 - Security best practices
 - Documentation and project management
 - Network design and implementation
+
+
+## Date 7/25/25
+### Step 13-16: Kubernetes Cluster LIVE ✅
+- **K3s Version**: v1.32.6+k3s1 (latest!)
+- **Cluster Status**: Ready, control-plane operational
+- **System Pods**: CoreDNS, metrics-server, local-path-provisioner (all running)
+- **kubectl**: Configured for alpha user access
+- **Test Deployment**: nginx pod created/deleted successfully
+- **Helm**: Installed for application package management
+- **Ingress**: Nginx Ingress Controller deployed
+- **Status**: Production-ready Kubernetes cluster operational!
+
+**Skills Demonstrated:**
+- Kubernetes cluster administration
+- Container orchestration
+- Package management with Helm
+- Application deployment and lifecycle management
+
+
+## Date 7/26/25
+### FINAL SUCCESS: Complete File Sharing Infrastructure ✅
+
+**Issue Resolution:**
+- **Root Cause**: UFW firewall blocking SMB ports 445/139
+- **Solution**: `sudo ufw allow 445/tcp` and `sudo ufw allow 139/tcp`
+- **Result**: Full Windows SMB connectivity restored
+
+**Operational Services:**
+1. **Windows Network Drive**: \\192.168.1.100\shared (Z: drive)
+2. **FileBrowser Web Interface**: http://192.168.1.100:30880
+3. **Kubernetes Cluster**: 4 applications running (Samba, FileBrowser, HTTP server, Nextcloud)
+
+**MISSION ACCOMPLISHED**: OpenMediaVault functionality fully replaced with professional Kubernetes infrastructure!
+
+
+## System Performance
+- **Resource Usage**: 11% memory, 63°C temperature under load
+- **Storage**: 960GB available, ext4 filesystem
+- **Network**: Gigabit ethernet, low latency local access
+
+## Security Configuration
+- **Firewall Rules**: SSH (22), K8s API (6443), SMB (445,139), HTTP (80,443)
+- **Authentication**: Ed25519 SSH keys, no password auth
+- **Container Security**: Non-root containers, resource limits
+- **Network Isolation**: Service-based networking, ingress controls
+
+## Project Value
+- **Cost Savings**: Replaced commercial NAS solution ($200-500)
+- **Learning ROI**: $13k-68k salary increase potential through K8s skills
+- **Infrastructure Scale**: Supports 2-user household, expandable to Pi cluster
+- **Maintenance**: Self-healing containers, automated restarts
+
+## Professional Skills Demonstrated
+**Infrastructure as Code**: Kubernetes YAML manifests, Helm charts
+**Container Orchestration**: Pod lifecycle, services, ingress, persistent volumes  
+**Network Engineering**: Static IP, firewall rules, port forwarding, DNS
+**Storage Management**: Persistent volumes, filesystem permissions, USB mounting
+**Security Implementation**: SSH keys, firewall configuration, service isolation
+**Systematic Troubleshooting**: Root cause analysis, methodical debugging
+**Documentation**: Professional project tracking, version control (Git)
+
+
+## Phase 2 Planning
+- **Pi 3 Worker Node**: Multi-node cluster expansion
+- **Monitoring Stack**: Prometheus + Grafana deployment
+- **Backup Strategy**: Automated USB backup jobs
+- **CI/CD Pipeline**: GitOps workflow for application updates
+- **Home Automation**: Integration with existing IoT devices
