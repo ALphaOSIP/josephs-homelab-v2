@@ -113,7 +113,7 @@ cat docs/setup-log.md
 ```bash
 # File Browser Web Interface
 http://192.168.1.100:30880
-# Username: admin | Password: W_avqtgVUwW8Ovks
+# Username: admin | Password: ********
 
 # Windows Network Drive
 \\192.168.1.100\shared
