@@ -5,7 +5,7 @@
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04.2%20LTS-orange.svg)](https://ubuntu.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> **Professional home infrastructure built with Kubernetes, demonstrating enterprise-grade DevOps practices and systematic problem-solving skills.**
+> **Professional home infrastructure built with Kubernetes, demonstrating effective IT practices and systematic problem-solving skills.**
 
 ## 🎯 Project Overview
 
@@ -203,12 +203,12 @@ josephs-homelab-v2/
 
 ## 📞 Contact & Career Focus
 
-**Joseph Prince** - DevOps Engineer Transition  
+**Joseph Prince** -   
 📧 [jprince0898@gmail.com](mailto:jprince0898@gmail.com)  
 💼 [LinkedIn Profile](https://www.linkedin.com/in/joseph-prince-78934a102/)  
 🏗️ [Portfolio Repository](https://github.com/ALphaOSIP/josephs-homelab-v2)
 
-> *This project demonstrates production-ready DevOps skills through real infrastructure implementation. Built as part of a career transition from Audio Visual Specialist to DevOps Engineer, targeting January 2026 placement in enterprise environments.*
+> *This project is my attempt to build production-ready Infrastructure skills through real infrastructure implementation.*
 
 ## 📝 License
 
