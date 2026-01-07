@@ -9,7 +9,7 @@
 
 ## 🎯 Project Overview
 
-This project replaces traditional NAS solutions (OpenMediaVault) with a modern, container-orchestrated infrastructure running on Kubernetes. Built as part of a DevOps career transition, it showcases real-world infrastructure engineering skills valued in enterprise environments.
+This project replaces traditional NAS solutions (OpenMediaVault) with a modern, container-orchestrated infrastructure running on Kubernetes. Built as part of my personal professional development, it showcases real-world infrastructure engineering skills valued in enterprise environments.
 
 **Key Achievement**: Reduced infrastructure complexity while increasing capabilities through container orchestration and automated service management.
 
@@ -201,7 +201,7 @@ josephs-homelab-v2/
 - [ ] CI/CD pipeline for application updates
 - [ ] Infrastructure as Code with Terraform
 
-## 📞 Contact & Career Focus
+## 📞 Contact
 
 **Joseph Prince** -   
 📧 [jprince0898@gmail.com](mailto:jprince0898@gmail.com)  
